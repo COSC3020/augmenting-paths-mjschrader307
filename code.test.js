@@ -1,7 +1,7 @@
 const fs = require('fs');
 const assert = require('assert');
 
-eval(fs.readFileSync('code.js')+'');
+const { Graph, augmentingPath } = require('./code.js');
 
 var graph = {'foo': {'boo': 7},
     'boo': {'foo': 3, 'bar': 2},
