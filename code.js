@@ -45,7 +45,7 @@ class Graph {
 
   getResidual(u, v) {
     if (v in this.graph[u]) {
-      let edge = graph[u][v];
+      let edge = this.graph[u][v];
 
       return edge["capacity"] - edge["flow"];
     } else {
